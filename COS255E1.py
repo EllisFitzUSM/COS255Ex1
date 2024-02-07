@@ -78,7 +78,7 @@ def decimal_to_base_n(decimalValue : int, base : int) -> str:
     remainder : int = decimalValue % base
     if quotient == 0:
         return valueToDigit[remainder]
-    baseNNumber : str = str(remainder)
+    baseNNumber : str = str(valueToDigit[remainder])
     while quotient >= 1:
 
         prevQuotient = quotient
